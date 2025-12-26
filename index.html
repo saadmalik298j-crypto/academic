@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Placement Preparation Guide 2025</title>
+    <meta name="description" content="Master the campus placement season 2025 with our comprehensive guide on CGPA, skills, and MNC requirements.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050507;
+            --accent-color: #00d2ff;
+            --accent-glow: rgba(0, 210, 255, 0.3);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0ab;
+            --glass-blur: 12px;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Antigravity Background Elements */
+        .ambient-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(0, 210, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 128, 0.05) 0%, transparent 40%);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Cards & Grids */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(var(--glass-blur));
+            padding: 2.5rem;
+            border-radius: 24px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
+        }
+
+        .glass-card h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        /* Links */
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        /* Content Styling */
+        .section-title {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Quick Tips */
+        .tips-list {
+            list-style: none;
+        }
+
+        .tips-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .tips-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .tips-list li:hover {
+            transform: translateX(10px);
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid var(--card-border);
+            color: var(--text-secondary);
+        }
+
+        /* Scroll Progress */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--accent-color), #ff0080);
+            width: 0%;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 4rem 0; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .container { padding: 0 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <div class="ambient-glow"></div>
+
+    <div class="container">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="visible">
+            <div class="hero-content">
+                <h1 class="gradient-text">How to Prepare for Campus Placements the Smart Way</h1>
+                <p>A data-driven roadmap for engineering and management students to land their dream roles in 2025.</p>
+                <div class="scroll-indictor" style="margin-top: 2rem; opacity: 0.5;">↓ Scroll to Explore</div>
+            </div>
+        </section>
+
+        <!-- 2. Role of CGPA -->
+        <section id="cgpa-role">
+            <div class="section-title">
+                <h2>The Shortlisting Filter</h2>
+                <p>Why academic consistency is your first ticket into the interview room.</p>
+            </div>
+            <div class="grid">
+                <div class="glass-card">
+                    <h3>MNC Requirements</h3>
+                    <p>Major tech giants often set a baseline of 6.5 to 7.5 CGPA to manage the sheer volume of applicants. It acts as a proxy for discipline and reliability.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>Startup Agility</h3>
+                    <p>High-growth startups might be more flexible, but a strong CGPA (8.0+) still serves as a signal of high performance and fast learning capabilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CGPA vs Skills -->
+        <section id="cgpa-vs-skills">
+            <div class="glass-card" style="width: 100%;">
+                <h2 style="margin-bottom: 2rem;">CGPA vs Skills – The Recruiter's Lens</h2>
+                <p>Recruiters today look for "T-Shaped" individuals. While your CGPA opens the door, your technical and soft skills close the deal. The ideal candidate balance looks like this:</p>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div>
+                        <h4 style="color: var(--accent-color); margin-bottom: 0.5rem;">Academic Excellence</h4>
+                        <p>Signals: Consistency, Discipline, Foundational Knowledge.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #ff0080; margin-bottom: 0.5rem;">Hands-on Skills</h4>
+                        <p>Signals: Problem-solving, Adaptability, Domain Expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Monitoring Scores & Backlink -->
+        <section id="monitoring">
+            <div class="section-title">
+                <h2>Optimize Your Academics</h2>
+                <p>Consistency is key. Modern students use digital tools to stay ahead of the curve.</p>
+            </div>
+            <div class="glass-card">
+                <p>Improving your academic standing starts with clarity. You should regularly audit your semester results to identify weak spots before the placement season begins. For instance, using a reliable tool to <a href="https://cgpahub.com">calculate CGPA accurately</a> can help you set realistic targets for your final year and ensure you meet the minimum criteria for top-tier recruiters.</p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <span style="background: rgba(0, 210, 255, 0.1); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Quarterly Audits</span>
+                    <span style="background: rgba(0, 210, 255, 0.1); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Goal Setting</span>
+                    <span style="background: rgba(0, 210, 255, 0.1); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Resource Planning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Quick Tips -->
+        <section id="quick-tips">
+            <div class="section-title">
+                <h2>Placement Quick Wins</h2>
+                <p>Small adjustments that yield massive results during the hiring cycle.</p>
+            </div>
+            <div class="grid">
+                <ul class="tips-list">
+                    <li>Build a project that solves a real-world problem, not just a tutorial clone.</li>
+                    <li>Master Data Structures and Algorithms (DSA) – it's the core of tech interviews.</li>
+                    <li>Optimize your LinkedIn profile with relevant keywords and a professional headshot.</li>
+                    <li>Practice "STAR" method for behavioral interviews (Situation, Task, Action, Result).</li>
+                    <li>Keep a clean repo on GitHub to showcase your coding journey.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. Conclusion & Resources -->
+        <section id="conclusion">
+            <div class="glass-card" style="text-align: center; border: 1px solid rgba(0, 210, 255, 0.2);">
+                <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Ready for the 2025 Season?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">Preparation is a marathon, not a sprint. Start today, balance your grades with project work, and stay resilient.</p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <button style="background: var(--accent-color); color: #000; border: none; padding: 1rem 2rem; border-radius: 50px; font-weight: 800; cursor: pointer;">Download Resource Pack</button>
+                    <button style="background: transparent; color: #fff; border: 1px solid #fff; padding: 1rem 2rem; border-radius: 50px; font-weight: 800; cursor: pointer;">Join Community</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Placement Edge. Built with Antigravity UI principles.</p>
+    </footer>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Interactive hover for cards - subtle 3D tilt effect
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) translateY(-10px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) translateY(0) rotateX(0) rotateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
